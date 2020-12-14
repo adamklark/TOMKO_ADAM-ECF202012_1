@@ -8,18 +8,74 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+ body
+{
+    background: linear-gradient(#692FC8,#4C1D5C);
+} 
 
+h3
+{
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+h4
+{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+h5{
+    color: black;
+}
+ul, li
+{
+    list-style: none;
+    display: inline;
+    bottom: 0;
+    padding: 20px;
+}
+#site-search
+{
+    height: 40px;
+    width: 50vw;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+#site-search2
+{
+    height: 40px;
+    width: 50vw;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+#po1::placeholder{
+    text-align: center;
+    color: #000;
+}
+
+button
+{
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+/*HEADER*/
 .top-bar
 {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 10vh;
     background-color: #E74747;
 }
- body
-{
-    background-color:  linear-gradient( #692FC8 #4C1D5C);
-} 
- Header 
+
 #website-title
 {
     font-size: 36px;
@@ -29,18 +85,29 @@
     font-weight: bold;
 }
 
+.barre-de-recherche
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
 .artistes
 {
+    margin-top: 20px;
     width: 100%;
-    height: 50px;
+    height: auto;
     display: flex;
-    background: grey;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-
+/*ARTISTE*/
 .artistes-images
 {
     display: flex;
@@ -48,20 +115,18 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+    margin-bottom: 50px;
     width: 100%;
     height: 25vh;
-    background-color: orange;
 }
-
-
 
 .artistes-cards
 {
-    height: 80%;
+    height: 100%;
     width: 200px;
     margin-left: 10px;
     margin-right: 10px;
-    background: #c4c4c4;
+    background: #f4f4f4; 
 } 
 
 .image-artiste
@@ -70,12 +135,13 @@
     height: 80%;
 }
 
-h4
+.page-1
 {
-    text-align: center;
-    font-size: 15px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 320px;
 }
-
 .recherches-recentes
 {
     display: flex;
@@ -84,13 +150,14 @@ h4
     width: 300px;
     height: 80%;
     border: 1px solid black;
-    background: grey;
+    background: #298196; 
 }
 
 .rencherches-recentes, h2
 {
     padding-left: 15px;
     line-height: 40px;
+
 }
 
 .txt-recentes
@@ -100,64 +167,227 @@ h4
     padding-left: 5px;
 }
 
-.el
+ .recommandation
 {
     display: flex;
-    margin: auto;
-    background: green;
-    width: 80%;
-    height: 320px;
-}
-
-.recommandation
-{
-    display: flex;
-    width: 50vw;
-    height: 40%;
-    margin-left: 20px;
-    background: grey;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
 }
 
 .recherche-conteneur
 {
     width: 100%;
     height: 80%;
-    background: yellow;
-}
-.album
+} 
+
+.recherche-album
 {
     width: 25%;
     margin: 10px;
     height: auto;
     border: 5px solid white;
-    background: black;
+} 
+
+.recherche-album, img
+{
+    width: 100%;
+    height: 100%;
 }
 
- .recherches 
+
+
+
+/*ALBUM*/                  
+.album-conteneur
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
     justify-content: center;
-    align-items: flex-end;
-    width: 50vw;
+    align-items: center;
+}
+
+.album-list img{
+    width: 100%;
+    height: 70%;
+}
+.album-list
+{
+    display: block;
+    height: 30%;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #f4f4f4;
+}
+
+/*BIOGRAPHIE*/
+.conteneur-bio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
     height: 50%;
-    margin-top: 25px;
-    margin-left: 20px;
-    background: blue;
-} 
+    margin: 20px auto;
 
-#plate-formes
-{
-    clear: both;
-    border: 1px #000;
 }
 
-.recherche-contenue
-{
-
-    width: 100px;
-    height: 20px;
-    background: grey;
-    margin: 10px;
+.contenuer-bio, img{
+    width: 100%;
+    height: auto;
 }
+
+#titre-bio
+{
+    font-size: 20px;
+    padding: 20px;
+}
+
+p
+{
+    font-size: 20px;
+    color:#fff;
+    padding: 30px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.dates-info{
+    color: white;
+}
+
+.date
+{
+    color: white;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.concert
+{
+    width: 50%;
+    height: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(#0D4B13,#459E4E);
+}
+
+.conteneur-page3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/*FOOTER*/
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background: #c4c4c4;
+}
+
+/*RESPONSIVE POUR TOUS LES FORMATS A PARTIR DE 800PX*/
+@media screen and (max-width: 800px){
+    .top-bar{
+        justify-content: center;
+        padding: 0;
+    }
+    #website-title{
+        padding: 0;
+    }
+
+    h3{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .recherche{
+        display: block;
+    }
+
+    .input
+    {
+        width: 50%;
+    }
+    .page-1
+    {
+        display: none;
+    }
+
+    
+    .artistes-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .artistes-cards{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: auto;
+    }
+
+    .image-artiste{
+        width: 100%;
+        height: auto;
+    }
+
+    .album-conteneur{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+        padding: 0;
+    }
+    .album-list{
+        width: 50%;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /*PAGE 3*/
+    p{
+        font-size: 15px;
+    }
+    .conteneur-page3{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+    .conteneur-bio{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        display: none;
+    }
+    .concert{
+        display: none;
+    }
+
+}
+
+
+
 

@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang=>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>My Music</title>
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <h1 id="website-title">My music</h1>
-        </div>
-        <div class="artistes">
-            <h3>Les artistes</h3>
-        </div>
-    </header>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>My Music</title>
+        </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <div class="top-bar">
+                <h1 id="website-title">My music&copy;</h1>
+            </div>
+            <div class="artistes">
+                <h3>Les artistes</h3>
+            </div>
+            <div class="barre-de-recherche">
+                <label for="site-search"></label>
+                <input type="search" id="site-search" placeholder="Recherche: Artist ou Groupe" name="po1">
+                <button>ok</button>
+            </div>
+        </header>
+
+        <!--ARTISTES-->
             <div class="artistes-images">
                 <div class="artistes-cards">
-                    <img src="/img/bobMarley/BobMarley.jpg">
-                    <h4>Bob Marley</h4>
+                    <img class="image-artiste" src="img/bobMarley/bobMarley.jpg">
+                    <h4 class="text-artiste">Bob Marley</h4>
                 </div>
                 <div class="artistes-cards">
                     <img class="image-artiste" src="img/ACDC/groupeACDC.jpg">
-                    <h4>ACDC</h4>
+                    <h4 class="text-artiste">ACDC</h4>
                 </div>
                 <div class="artistes-cards">
                     <img class="image-artiste" src="img/Eminem/Eminem.jpg">
-                    <h4>Eminem</h4>
+                    <h4 class="text-artiste">Eminem</h4>
                 </div>
                 <div class="artistes-cards">
                     <img class="image-artiste" src="img/michaelJackson/michaelJackson.jpeg">
-                    <h4>Michael Jackson</h4>
+                    <h4 class="text-artiste">Michael Jackson</h4>
                 </div>
                 <div class="artistes-cards">
                     <img class="image-artiste" src="img/Rihanna/Rihanna.jpg">
-                    <h4>Rihanna</h4>
+                    <h4 class="text-artiste">Rihanna</h4>
                 </div>
             </div>
-        <div class="el">
-
+        <!--DIV CONTENENT LES RECHERCHES RECENTES ET RECOMMANDATION-->
+        <div class="page-1">
+            <!--LES RECHERCHES RECENTES-->
             <div class="recherches-recentes">
                 <h5 class="txt-recentes">Mes recherches récentes</h5>
                 <h2>Eminem</h2>
@@ -46,42 +55,112 @@
                 <h2>Rihanna</h2>
                 <h2>Michael Jackson</h2>
             </div>
-            
+
+            <!--CONTENUES RECOMMANDEES-->
             <div class="recherche-conteneur">
                 <div class="recommandation">
-                    <div class="album">
+                    <div class="recherche-album">
+                        <img src="img/Eminem/theEminemShow.jpg">
                     </div>
-                    <div class="album">
+                    <div class="recherche-album">
+                        <img src="img/bobMarley/redemptionSong.jpg">
+                    </div>
+                    <div class="recherche-album">
+                        <img src="img/Rihanna/Loud.jpg">
+                    </div>
+                    <div class="recherche-album">
+                        <img src="img/michaelJackson/foreverMichael.jpg">
 
-                    </div>
-                    <div class="album">
-
-                    </div>
-                    <div class="album">
-
-                    </div>
-                </div>
-                <div class="recherches"> 
-                    <div class="element">
-                         <input class="input1" type="text" name="" id="barre-recherche" placeholder="Rechere: Artiste ou Groupe">
-                        <div class="recherche-contenue">
-                         <h4 id="plate-formes">Chercher</h4>
-                         </div>
-                    </div>
-                
-                   
-                    
-                        
                     </div>
                 </div> 
             </div>
-                
-             
         </div>
-   <!--  <footer>
 
-    </footer> -->
+        <!--LES ALBUMS-->
+        <h3>Les Albums</h3>
+        <div class="barre-de-recherche">
+            <label for="site-search"></label>
+            <input type="search" id="site-search2" placeholder="Recherche: Artist ou Groupe" name="po2">
+            <button>ok</button>
+        </div>
+        </div>
+        <div class="album-conteneur">
+            <div class="album-list">
+                <img src="img/ACDC/blackIce.jpg">
+                <h4>Black Ice</h4>
+            </div>
 
-    <script src="/scipts/script.js"></script>
-</body>
+            <div class="album-list">
+                <img  src="img/ACDC/whoMadeWho.jpeg">
+                 <h4>Who Made Who</h4>
+             </div>
+
+            <div class="album-list">
+                <img  src="img/Eminem/curtainCallTheHits.jpg">
+                <h4>Curtain Call The Hits</h4>
+            </div>
+                 
+
+            <div class="album-list">
+                <img  src="img/Eminem/theEminemShow.jpg">
+                <h4>The Eminem Show</h4>
+             </div>
+
+            <div class="album-list">
+                <img  src="img/michaelJackson/foreverMichael.jpg">
+                <h4>Forever Michael</h4>
+             </div>
+
+            <div class="album-list">
+                <img  src="img/michaelJackson/Thriller.jpg">
+                 <h4>Thriller</h4>
+             </div>
+
+            <div class="album-list">
+                <img  src="img/Rihanna/Loud.jpg">
+                <h4>Loud</h4>
+            </div>
+                
+
+            <div class="album-list">
+                <img  src="img/bobMarley/cathAFire.jpeg">
+                <h4>Cath A Fire</h4>
+             </div>
+
+            <div class="album-list">
+                <img  src="img/bobMarley/redemptionSong.jpg">
+                <h4>redemption Song</h4>
+             </div>
+        </div>
+        <!--BIOGRAPHIE ET CONCERT-->
+        <h3>La Bioghaphie du Moment</h3>
+        <div class="conteneur-page3"> 
+            <div class="conteneur-bio">
+                <h3 id="titre-bio">EMINEM</h3>
+                <img src="img/Eminem/Eminem.jpg">
+                <p>
+                    Abandonné par son père, il est élevé par sa mère dans le Missouri avant que celle-ci ne décide de déménager à Détroit. 
+                    <br>En 1996, il sort son premier album, "Infinite" qui est commercialement un échec, mais qui bénéficie d'une certaine
+                     reconnaissance dans le monde du rap, et plus particulièrement de Dr Dre qui découvre ce jeune blanc et tombe sous le charme de son style.
+                </p>
+            </div>
+            <div class="concert">
+                <h4 class="dates-info">SES PROCHAINES CONCERT</h4>
+                <h5 class="date">LE 30 MARS 2021 NEW YORK</h5>
+                <h5 class="date">Le 30 AVRIL 2021 PARIS</h5>
+                <h5 class="date">LE 30 MAI 2021 MIAMI</h5>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <footer>
+            <ul>
+                <li>Parteners</li>
+                <li>Support</li>
+                <li>Contact</li>
+                <li>Liens</li>
+            </ul>
+        </footer>
+
+        <script src="/scipts/script.js"></script>
+    </body>
 </html>
